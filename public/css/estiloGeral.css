@@ -1,0 +1,49 @@
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(#b91111, #0051ff);
+    z-index: -1;
+}
+
+h1 {
+    display: none;
+    text-align: center;
+    color: rgb(241, 241, 241);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 150px;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+a {
+    display: block;
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+    height: auto;
+}
+
+.messageP {
+    margin-top: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.red {
+    color: red;
+}
+
+.yellow {
+    color: rgb(207, 221, 9);
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page NotFound</title>
+    <style>
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(#2c6326, #05e210);
+            z-index: -1;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            font-family: sans-serif;
+            font-size: 28px;
+            margin-top: 30px;
+            color: white;
+        }
+
+        .infoCaixa {
+            width: 500px;
+            height: 200px;
+            border: 2px solid rgb(238, 238, 238);
+            border-radius: 8px;
+            margin: auto;
+            margin-top: 190px;
+            background-color: rgba(19, 172, 40, 0.5);
+        }
+
+        .infoCaixa:hover{
+            padding: 2px;
+            border-color: black;
+        }
+
+        .infoRedirect {
+            display: inline-flex;
+            justify-content: space-between;
+            margin-left: 70px;
+        }
+
+        p{
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="infoCaixa">
+        <h1>Essa rota não existe.</h1>
+        <div class="infoRedirect">
+            <p>Redirecionando para a pagina de login.</p>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(()=>{
+            window.location.href='/login.html'
+        },5000)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+.checkbox-container{
+    position: relative;
+    bottom: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.textInfo{
+    cursor: pointer;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.opcoesDelete {
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.click {
+    background: linear-gradient(to bottom, #00ff22, #09a004);
+}
+
+.msgServerDelteCommad{
+    display: inline-block;
+    position: relative;
+    top: 40px;
+}

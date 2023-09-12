@@ -1,0 +1,165 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>JoxsBot</title>
+    <link rel="icon" href="../img/robo.png" type="image/x-png">
+    <style>
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(#b91111, #0051ff);
+            z-index: -1;
+        }
+
+        h1 {
+            padding-top: 40px;
+            text-align: center;
+            color: aliceblue;
+            font-size: 30px;
+            letter-spacing: 2px;
+            font-family: sans-serif;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            text-align: center;
+            color: antiquewhite;
+            font-family: sans-serif;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            background-color: rgba(97, 92, 85, 0.40);
+            border: 2px solid rgb(211, 211, 211);
+            border-radius: 10px;
+            width: 400px;
+            height: 390px;
+            margin: auto;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            padding: 20px;
+        }
+
+        #login-form {
+            padding: 20px;
+        }
+
+        .form-group {
+            color: white;
+            margin-left: 40px;
+            margin-right: 30px;
+            margin-bottom: 10px;
+            padding: 15px;
+            font-size: 17px;
+            font-family: sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #username,
+        #password {
+            margin-top: 10px;
+            width: 200px;
+            padding: 8px;
+            border: 2px solid rgb(217, 228, 228);
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            outline: none;
+            transition: background-color 0.3s, border-color 0.60s;
+        }
+
+        #username:hover,
+        #password:hover {
+            border-color: black;
+            padding: 10px;
+        }
+
+        #login-button {
+            width: 180px;
+            height: 38px;
+            border: 2px solid white;
+            border-radius: 8px;
+            background-color: rgba(97, 92, 85, 0.40);
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        #login-button:hover {
+            border-color: black;
+            padding: auto;
+            cursor: pointer;
+        }
+
+        .error-message {
+            color: red;
+            font-weight: bold;
+            font-family: sans-serif;
+            margin: auto;
+            padding-top: 16px;
+        }
+
+        .caixaInfoDev {
+            text-align: center;
+            margin-top: 50px;
+            padding: 8px;
+        }
+
+        .caixaInfoDev .sociaisDev a i {
+            color: rgb(230, 230, 231);
+            font-size: 17px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        .caixaInfoDev .sociaisDev a:hover {
+            border: 2px solid rgba(0, 0, 0, 0.808);
+            border-radius: 8px;
+            height: 40px;
+            padding: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Digite as informações do seu login enviado no Email.</h1>
+
+    <div class="container">
+        <h2>Bem-vindo ao Login</h2>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="username"><i class="fas fa-user"></i> Usuário:</label>
+                <input type="text" id="username" name="username" placeholder="Nome de usuário" required="">
+            </div>
+            <div class="form-group">
+                <label for="password"><i class="fas fa-lock"></i> Senha:</label>
+                <input type="password" id="password" name="password" placeholder="Senha" required="">
+            </div>
+            <div class="form-group">
+                <button id="login-button" type="button">Entrar</button>
+
+                <div class="error-message" id="error-message"></div>
+            </div>
+        </form>
+    </div>
+
+    <div class="caixaInfoDev">
+        <div class="sociaisDev">
+            <a href="https://www.instagram.com/if_vitor" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/Vitor-VX" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="indisponivel.html" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="scriptsSites/scriptLogin.js"></script>
+</body>
+
+</html>

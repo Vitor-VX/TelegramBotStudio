@@ -1,0 +1,89 @@
+.conteiner-pop-up {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 500px;
+    max-height: 90%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    z-index: 60;
+    transition: 140ms;
+}
+
+#textPop-up {
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.conteiner-pop-up form {
+    text-align: center;
+}
+
+.conteiner-pop-up input.input-pop-up {
+    display: block;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #333;
+    border-radius: 2px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.conteiner-pop-up input.input-pop-up:focus {
+    background-color: #333;
+    color: #fff;
+}
+
+.campo-botoes {
+    margin-top: 30px;
+}
+
+#msgServer {
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    color: rgb(255, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .conteiner-pop-up {
+        position: relative;
+        top: 15px;
+        width: 90%;
+        max-width: 90%;
+        margin-top: 10%;
+        padding: 10px;
+    }
+
+    .conteiner-pop-up input.input-pop-up {
+        max-width: 90%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .campo-botoes {
+        margin-top: 10px;
+    }
+
+    #msgServer {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

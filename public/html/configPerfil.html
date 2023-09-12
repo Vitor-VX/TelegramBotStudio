@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/configPerfil.css">
+    <title>Perfil</title>
+</head>
+
+<body>
+    <div class="conteinerEditPerfil">
+        <div>
+            <h2>Seu perfil:</h2>
+        </div>
+
+        <div class="conteiner-perfil">
+            <label id="textNone" class="labelInfo">Nome:</label>
+            <input id="campo_info_user" class="inputOptions" type="text" name="labelInfo" placeholder="Usúario">
+
+            <label id="textSenha" class="labelInfo">Senha:</label>
+            <img class="imgSenha" src="../img/imgSenhaFalse.png" alt="Ícone de senha">
+            <input id="campo_info_senha" class="inputOptions" type="password" name="labelInfo" placeholder="Senha">
+
+            <div id="msg_input"></div>
+            <button id="botaoRedefinirInfos" type="submit">Redefinir informações</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../scriptsSites/scriptRedefinirPerfil.js"></script>
+</body>
+
+</html>

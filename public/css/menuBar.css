@@ -1,0 +1,85 @@
+.conteiner {
+    display: inline-block;
+    position: fixed;
+    width: 0;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: rgba(255, 255, 255);
+    transition: 550ms;
+    z-index: 100;
+}
+
+
+.conteiner-painel {
+    justify-content: center;
+    position: relative;
+    width: 250px;
+    bottom: 20px;
+    height: 80%;
+}
+
+.campoUserFoto {
+    position: relative;
+    width: auto;
+    display: block;
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    font-family: sans-serif;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.options {
+    position: relative;
+    text-align: center;
+    width: auto;
+    padding: 8px;
+    transition: width 0.3s ease;
+}
+
+.options_config {
+    display: block;
+    height: auto;
+    font-family: sans-serif;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #3498db, hsl(204, 64%, 44%));
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 15px;
+    padding: 13px;
+    font-size: 16px;
+}
+
+.options_config:hover {
+    padding: 15px;
+    font-size: 18px;
+    border: 3px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 13px rgb(255, 255, 255);
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+}
+
+.botao {
+    position: relative;
+    left: 188px;
+    top: 5px;
+    margin-left: 16px;
+    background-color: rgba(0, 0, 0, 0.800);
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 44px;
+    height: 48px;
+    text-align: center;
+    transition: 130ms;
+    cursor: pointer;
+}
