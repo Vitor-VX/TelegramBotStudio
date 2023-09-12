@@ -8,4 +8,4 @@ Recursos deste projeto incluem:
 - Criação de FAQs
 - Painel de Controle Amigável 😊
 
-![Tela de Login](https://ibb.co/tJmXdjL)
+![Tela de Login](https://i.ibb.co/tJmXdjL/img-Desmostracao-Login.jpg)
