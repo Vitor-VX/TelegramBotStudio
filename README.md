@@ -9,3 +9,4 @@ Recursos deste projeto incluem:
 - Painel de Controle Amigável 😊
 
 ![Tela de Login](https://i.ibb.co/tJmXdjL/img-Desmostracao-Login.jpg)
+![Painel Principal](https://i.ibb.co/N3tV96Y/img-Desmostracao-Painel.jpg)
