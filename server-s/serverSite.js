@@ -136,7 +136,7 @@ app.post(`/api/v1/verificTokenSucess`, async (req, res) => {
     }
 });
 
-app.post(`/api/v1/deleteTokenSuccess`, (req, res) => {
+app.delete(`/api/v1/deleteTokenSuccess`, (req, res) => {
     const { token } = req.body;
     try {
         const deleteToken = async () => {
@@ -172,7 +172,7 @@ app.post('/api/v1/getCliente', verificarToken, async (req, res) => {
     }
 })
 
-app.post('/api/v1/updateInfoUser', async (req, res) => {
+app.patch('/api/v1/updateInfoUser', async (req, res) => {
     const { v, newUserEmail, newUserSenha } = req.body
     try {
         const verificInfosUserValidate = await ClientModel.findOne({ Indentifiy: v })
@@ -312,7 +312,7 @@ app.post('/api/v1/GetInfoCommads', async (req, res) => {
     }
 })
 
-app.post('/api/v1/removeCommands', async (req, res) => {
+app.delete('/api/v1/removeCommands', async (req, res) => {
     const { v, commandRemove } = req.body;
 
     try {
@@ -342,7 +342,7 @@ app.post('/api/v1/removeCommands', async (req, res) => {
     }
 });
 
-app.post('/api/v1/removeFaqs', async (req, res) => {
+app.delete('/api/v1/removeFaqs', async (req, res) => {
     const { v, faqRemove } = req.body;
 
     try {
